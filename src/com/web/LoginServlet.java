@@ -36,6 +36,10 @@ public class LoginServlet extends SuburbanNaturalistHttpServlet
 			request.getSession().setAttribute("user", null);
 			this.forward(request, response, "/");
 		}
+		else if(action == null && user == null)
+		{
+			this.forward(request, response, "/");
+		}
 		else if(action.equalsIgnoreCase("login"))
 		{
 			if(username == null || username.length() == 0)
@@ -69,7 +73,7 @@ public class LoginServlet extends SuburbanNaturalistHttpServlet
 				}
 				else
 				{
-					this.forward(request, response, "/jsp/user/hello.jsp");
+					this.forward(request, response, "/jsp/user/home.jsp");
 				}
 			}
 		}
