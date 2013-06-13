@@ -35,6 +35,7 @@
         <property name="hbm2ddl.auto">update</property>
 
         <mapping resource="hibernate/users.hbm.xml"/>
+        <mapping resource="hibernate/images.hbm.xml"/>
 
     </session-factory>
 
