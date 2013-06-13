@@ -3,6 +3,8 @@ package com.helpers;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import javax.servlet.http.Part;
+
 public class ValidationHelper
 {
 	public void validateSignup(HashMap<String, String> params, ArrayList<String> errors)
@@ -47,4 +49,15 @@ public class ValidationHelper
 		}
 	}
 
+	public ArrayList<String> validateFileUpload(Part part)
+	{
+		ArrayList<String> errors = new ArrayList<String>();
+		
+	    if(part.getSize() > 2000000)
+	    {
+	    	errors.add("The image size must be less than 2MB");
+	    }
+
+	    return errors;
+	}
 }

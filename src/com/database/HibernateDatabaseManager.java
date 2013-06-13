@@ -2,15 +2,18 @@ package com.database;
 
 import java.util.ArrayList;
 
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.PropertyNotFoundException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Projections;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import com.models.Image;
 import com.models.User;
 import com.parents.SuburbanNaturalistException;
 
@@ -111,6 +114,33 @@ public class HibernateDatabaseManager
 			session.save(u);
 			trans.commit();
 			u.setPassword(null);
+		}
+		catch(HibernateException he)
+		{
+			if(trans != null)
+			{
+				trans.rollback();
+			}
+			throw new SuburbanNaturalistException(he);
+		}
+	}
+	
+	public void saveImage(Image i) throws SuburbanNaturalistException
+	{
+		this.getSession();
+		int imageId;
+		
+		try
+		{
+			trans = session.beginTransaction();
+			session.save(i);
+			Criteria criteria = session
+					.createCriteria(Image.class)
+					.setProjection(Projections.max("id"));
+			imageId = (Integer)criteria.uniqueResult();			
+			i.setImagePath(i.getImagePath() + "/" + imageId);
+			session.saveOrUpdate(i);
+			trans.commit();
 		}
 		catch(HibernateException he)
 		{
