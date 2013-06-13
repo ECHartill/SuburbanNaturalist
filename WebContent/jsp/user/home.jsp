@@ -20,7 +20,7 @@
 	<c:if test="${user != null}" >
 		<jsp:include page="../includes/logout_link.jsp" />
 
-		<h4>Upload Pictures</h4> <a href="http://docs.oracle.com/javaee/6/tutorial/doc/glrbb.html" >help</a><br/>
+		<a href="upload" >Upload Pictures</a> <a href="http://docs.oracle.com/javaee/6/tutorial/doc/glrbb.html" >help for file uploads</a><br/>
 		<h4>View Others' Pictures</h4><br/><br/><br/>
 		
 		<h2>This is an array of thumbnails</h2>
