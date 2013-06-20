@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17128" started-at="2013-06-20T15:24:18Z" finished-at="2013-06-20T15:24:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17128" started-at="2013-06-20T15:24:18Z" finished-at="2013-06-20T15:24:35Z">
+      <class name="test.selenium.scripts.browser.login.LoginAsUser">
+        <test-method status="PASS" signature="invalidPasswordLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="invalidPasswordLogin" duration-ms="8116" started-at="2013-06-20T15:24:18Z" finished-at="2013-06-20T15:24:26Z">
+        </test-method> <!-- invalidPasswordLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T15:24:26Z" finished-at="2013-06-20T15:24:26Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="invalidUsernameLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="invalidUsernameLogin" duration-ms="5885" started-at="2013-06-20T15:24:26Z" finished-at="2013-06-20T15:24:32Z">
+        </test-method> <!-- invalidUsernameLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T15:24:32Z" finished-at="2013-06-20T15:24:32Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="validLogin" duration-ms="3093" started-at="2013-06-20T15:24:32Z" finished-at="2013-06-20T15:24:35Z">
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="closeBrowser" is-config="true" duration-ms="6" started-at="2013-06-20T15:24:35Z" finished-at="2013-06-20T15:24:35Z">
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.selenium.scripts.browser.login.LoginAsUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

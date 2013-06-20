@@ -1,9 +1,11 @@
-package test.selenium.scripts.htmlunit.join;
+package test.selenium.scripts.browser.join;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import test.selenium.scripts.browser.parents.Join;
 
 public class JoinAsUser extends Join
 {
@@ -39,6 +41,7 @@ public class JoinAsUser extends Join
 	@Test
 	public void userJoinsMissingFields()
 	{
+		System.out.println("User Join missing fields");
 		for(int x = 0; x < 5; x++)
 		{
 			//need to find elements again after each page load
@@ -156,4 +159,5 @@ public class JoinAsUser extends Join
 			assert error.getText().equals("The email is not well formed");
 		}
 	}
+
 }

@@ -26,7 +26,7 @@ public class HibernateDatabaseManager
 	private Transaction trans = null;
 
 	/**
-	 * initialize the hobernate database manager
+	 * initialize the hibernate database manager
 	 * Create a session from the session factory
 	 * 
 	 */

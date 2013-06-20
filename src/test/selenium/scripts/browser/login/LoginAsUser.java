@@ -1,13 +1,15 @@
-package test.selenium.scripts.htmlunit.login;
+package test.selenium.scripts.browser.login;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class LoginUser extends Login
+import test.selenium.scripts.browser.parents.Login;
+
+public class LoginAsUser extends Login
 {
 	//TODO: find random data generator
-	protected String VALID_USER_USERNAME = "erichartill@gmail.com";
+	protected String VALID_USER_USERNAME = "eric@eric.com";
 	protected String INVALID_USER_USERNAME = "ericalphaone@gmail.com";
 	protected String VALID_USER_PASSWORD = "1qweqwe";
 	protected String INVALID_USER_PASSWORD = "ewqewq1";
@@ -15,7 +17,8 @@ public class LoginUser extends Login
 	@Test
 	public void validLogin()
 	{
-		browser = new HtmlUnitDriver();
+//		browser = new HtmlUnitDriver();
+		browser = new FirefoxDriver();
 		browser.get(url);
 		username = browser.findElement(By.id(username_id));
 		password = browser.findElement(By.id(password_id));
@@ -24,13 +27,13 @@ public class LoginUser extends Login
 		password.submit();
 		successful_login = browser.findElement(By.id(successful_login_id));
 		
-		assert successful_login.getText().equals("HELLO!");
+		assert successful_login.getText().equals("Logout");
 	}
 	
 	@Test
 	public void invalidUsernameLogin()
 	{
-		browser = new HtmlUnitDriver();
+		browser = new FirefoxDriver();
 		browser.get(url);
 		username = browser.findElement(By.id(username_id));
 		password = browser.findElement(By.id(password_id));
@@ -45,7 +48,7 @@ public class LoginUser extends Login
 	@Test
 	public void invalidPasswordLogin()
 	{
-		browser = new HtmlUnitDriver();
+		browser = new FirefoxDriver();
 		browser.get(url);
 		username = browser.findElement(By.id(username_id));
 		password = browser.findElement(By.id(password_id));
@@ -56,4 +59,5 @@ public class LoginUser extends Login
 		
 		assert failed_login.getText().equals("That user password combination was not found");
 	}
+	
 }

@@ -1,14 +1,13 @@
-package test.selenium.scripts.htmlunit.join;
+package test.selenium.scripts.browser.parents;
 
 import java.util.ArrayList;
 
 import org.openqa.selenium.WebElement;
 
-import test.selenium.scripts.htmlunit.SubNatBaseScript;
 
-public class Join extends SubNatBaseScript
+public class Join extends SubNatBrowserTest
 {
-	protected String url = "http://localhost:8080/SuburbanNaturalist/signup";
+	protected String url = "http://localhost:8080/SubNat/signup";
 	protected String firstname_id = "signup_firstname";
 	protected String lastname_id = "signup_lastname";
 	protected String email_id = "signup_email";
