@@ -1,7 +1,6 @@
 package test.selenium.scripts.browser.login;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import test.selenium.scripts.browser.parents.Login;
@@ -17,9 +16,6 @@ public class LoginAsUser extends Login
 	@Test
 	public void validLogin()
 	{
-//		browser = new HtmlUnitDriver();
-		browser = new FirefoxDriver();
-		browser.get(url);
 		username = browser.findElement(By.id(username_id));
 		password = browser.findElement(By.id(password_id));
 		username.sendKeys(VALID_USER_USERNAME);
@@ -33,8 +29,6 @@ public class LoginAsUser extends Login
 	@Test
 	public void invalidUsernameLogin()
 	{
-		browser = new FirefoxDriver();
-		browser.get(url);
 		username = browser.findElement(By.id(username_id));
 		password = browser.findElement(By.id(password_id));
 		username.sendKeys(INVALID_USER_USERNAME);
@@ -48,8 +42,6 @@ public class LoginAsUser extends Login
 	@Test
 	public void invalidPasswordLogin()
 	{
-		browser = new FirefoxDriver();
-		browser.get(url);
 		username = browser.findElement(By.id(username_id));
 		password = browser.findElement(By.id(password_id));
 		username.sendKeys(VALID_USER_USERNAME);

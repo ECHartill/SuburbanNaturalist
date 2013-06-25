@@ -1,8 +1,6 @@
 package test.selenium.scripts.browser.join;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import test.selenium.scripts.browser.parents.Join;
@@ -18,13 +16,7 @@ public class JoinAsUser extends Join
 	protected String USER_PASSWORD = "1qweqwe1";
 	protected String OTHER_PASSWORD = "ewqewq";
 
-	@BeforeTest
-	public void gotoJoinPage()
-	{
-		browser = new HtmlUnitDriver();
-		browser.get(url);
-	}
-
+	
 	//	@Test
 	//TODO: find random data generator
 	public void userJoinsSubNat()
@@ -35,79 +27,76 @@ public class JoinAsUser extends Join
 		password.sendKeys(USER_PASSWORD);
 		confirm.sendKeys(USER_PASSWORD);
 		confirm.submit();
-
 	}
 
 	@Test
-	public void userJoinsMissingFields()
+	public void userJoinsNoFirstName()
 	{
-		System.out.println("User Join missing fields");
-		for(int x = 0; x < 5; x++)
-		{
-			//need to find elements again after each page load
-			firstname = browser.findElement(By.id(firstname_id));
-			lastname = browser.findElement(By.id(lastname_id));
-			email = browser.findElement(By.id(email_id));
-			password = browser.findElement(By.id(password_id));
-			confirm = browser.findElement(By.id(confirm_id));
+		lastname.sendKeys(USER_LASTNAME);
+		email.sendKeys(USER_EMAIL);
+		password.sendKeys(USER_PASSWORD);
+		confirm.sendKeys(USER_PASSWORD);
 
-			firstname.clear();
-			lastname.clear();
-			email.clear();
-			password.clear();
-			confirm.clear();
-
-			firstname.sendKeys(USER_FIRSTNAME);
-			lastname.sendKeys(USER_LASTNAME);
-			email.sendKeys(USER_EMAIL);
-			password.sendKeys(USER_PASSWORD);
-			confirm.sendKeys(USER_PASSWORD);
-			
-			switch (x)
-			{
-			case 0:
-				firstname.clear();
-				confirm.submit();
-				error = browser.findElement(By.id(errors_id));
-				assert error.getText().equals("First Name cannot be empty");
-				break;
-			case 1:
-				lastname.clear();
-				confirm.submit();
-				error = browser.findElement(By.id(errors_id));
-				assert error.getText().equals("Last Name cannot be empty");
-				break;
-			case 2:
-				email.clear();
-				confirm.submit();
-				error = browser.findElement(By.id(errors_id));
-				assert error.getText().equals("Email cannot be empty");
-				break;
-			case 3:
-				password.clear();
-				confirm.submit();
-				error = browser.findElement(By.id(errors_id));
-				assert error.getText().equals("Password cannot be empty");
-				break;
-			case 4:
-				confirm.clear();
-				confirm.submit();
-				error = browser.findElement(By.id(errors_id));
-				assert error.getText().equals("Password Confirm cannot be empty");
-				break;
-			}
-		}
+		confirm.submit();
+		error = browser.findElement(By.id(errors_id));
+		assert error.getText().equals("First Name cannot be empty");
 	}
+	
+	@Test
+	public void userJoinsNoLastName()
+	{
+		firstname.sendKeys(USER_FIRSTNAME);
+		email.sendKeys(USER_EMAIL);
+		password.sendKeys(USER_PASSWORD);
+		confirm.sendKeys(USER_PASSWORD);
 
+		confirm.submit();
+		error = browser.findElement(By.id(errors_id));
+		assert error.getText().equals("Last Name cannot be empty");
+	}
+	
+	@Test
+	public void userJoinsNoEmail()
+	{
+		firstname.sendKeys(USER_FIRSTNAME);
+		lastname.sendKeys(USER_LASTNAME);
+		password.sendKeys(USER_PASSWORD);
+		confirm.sendKeys(USER_PASSWORD);
+
+		confirm.submit();
+		error = browser.findElement(By.id(errors_id));
+		assert error.getText().equals("Email cannot be empty");
+	}
+	
+	@Test
+	public void userJoinsNoPassword()
+	{
+		firstname.sendKeys(USER_FIRSTNAME);
+		lastname.sendKeys(USER_LASTNAME);
+		email.sendKeys(USER_EMAIL);
+		confirm.sendKeys(USER_PASSWORD);
+
+		confirm.submit();
+		error = browser.findElement(By.id(errors_id));
+		assert error.getText().equals("Password cannot be empty");
+	}
+	
+	@Test
+	public void userJoinsNoConfirm()
+	{
+		firstname.sendKeys(USER_FIRSTNAME);
+		lastname.sendKeys(USER_LASTNAME);
+		email.sendKeys(USER_EMAIL);
+		password.sendKeys(USER_PASSWORD);
+
+		confirm.submit();
+		error = browser.findElement(By.id(errors_id));
+		assert error.getText().equals("Password Confirm cannot be empty");
+	}
+	
 	@Test
 	public void userJoinsPasswordsDoNotMatch()
 	{
-		firstname = browser.findElement(By.id(firstname_id));
-		lastname = browser.findElement(By.id(lastname_id));
-		email = browser.findElement(By.id(email_id));
-		password = browser.findElement(By.id(password_id));
-		confirm = browser.findElement(By.id(confirm_id));
-
 		firstname.sendKeys(USER_FIRSTNAME);
 		lastname.sendKeys(USER_LASTNAME);
 		email.sendKeys(USER_EMAIL);

@@ -1,25 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17128" started-at="2013-06-20T15:24:18Z" finished-at="2013-06-20T15:24:35Z">
+  <suite name="regression" duration-ms="28660" started-at="2013-06-20T18:29:38Z" finished-at="2013-06-20T18:30:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17128" started-at="2013-06-20T15:24:18Z" finished-at="2013-06-20T15:24:35Z">
+    <test name="firefox" duration-ms="28660" started-at="2013-06-20T18:29:38Z" finished-at="2013-06-20T18:30:07Z">
       <class name="test.selenium.scripts.browser.login.LoginAsUser">
-        <test-method status="PASS" signature="invalidPasswordLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="invalidPasswordLogin" duration-ms="8116" started-at="2013-06-20T15:24:18Z" finished-at="2013-06-20T15:24:26Z">
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="gotoJoinPage" is-config="true" duration-ms="7459" started-at="2013-06-20T18:29:38Z" finished-at="2013-06-20T18:29:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="invalidPasswordLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="invalidPasswordLogin" duration-ms="240" started-at="2013-06-20T18:29:45Z" finished-at="2013-06-20T18:29:46Z">
         </test-method> <!-- invalidPasswordLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T15:24:26Z" finished-at="2013-06-20T15:24:26Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="closeBrowser" is-config="true" duration-ms="8" started-at="2013-06-20T18:29:46Z" finished-at="2013-06-20T18:29:46Z">
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="invalidUsernameLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="invalidUsernameLogin" duration-ms="5885" started-at="2013-06-20T15:24:26Z" finished-at="2013-06-20T15:24:32Z">
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="gotoJoinPage" is-config="true" duration-ms="1693" started-at="2013-06-20T18:29:46Z" finished-at="2013-06-20T18:29:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="invalidUsernameLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="invalidUsernameLogin" duration-ms="228" started-at="2013-06-20T18:29:47Z" finished-at="2013-06-20T18:29:48Z">
         </test-method> <!-- invalidUsernameLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T15:24:32Z" finished-at="2013-06-20T15:24:32Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T18:29:48Z" finished-at="2013-06-20T18:29:48Z">
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="validLogin" duration-ms="3093" started-at="2013-06-20T15:24:32Z" finished-at="2013-06-20T15:24:35Z">
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="gotoJoinPage" is-config="true" duration-ms="2021" started-at="2013-06-20T18:29:48Z" finished-at="2013-06-20T18:29:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="validLogin" duration-ms="228" started-at="2013-06-20T18:29:50Z" finished-at="2013-06-20T18:29:50Z">
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@681e2ca7]" name="closeBrowser" is-config="true" duration-ms="6" started-at="2013-06-20T15:24:35Z" finished-at="2013-06-20T15:24:35Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.login.LoginAsUser@2f774b9b]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T18:29:50Z" finished-at="2013-06-20T18:29:50Z">
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.selenium.scripts.browser.login.LoginAsUser -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.selenium.scripts.browser.join.JoinAsUser">
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="3642" started-at="2013-06-20T18:29:50Z" finished-at="2013-06-20T18:29:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="147" started-at="2013-06-20T18:29:53Z" finished-at="2013-06-20T18:29:54Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsInvalidEmail()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsInvalidEmail" duration-ms="745" started-at="2013-06-20T18:29:54Z" finished-at="2013-06-20T18:29:54Z">
+        </test-method> <!-- userJoinsInvalidEmail -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="5" started-at="2013-06-20T18:29:54Z" finished-at="2013-06-20T18:29:54Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="1759" started-at="2013-06-20T18:29:54Z" finished-at="2013-06-20T18:29:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="148" started-at="2013-06-20T18:29:56Z" finished-at="2013-06-20T18:29:56Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsNoConfirm()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsNoConfirm" duration-ms="181" started-at="2013-06-20T18:29:56Z" finished-at="2013-06-20T18:29:56Z">
+        </test-method> <!-- userJoinsNoConfirm -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="6" started-at="2013-06-20T18:29:56Z" finished-at="2013-06-20T18:29:56Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="1503" started-at="2013-06-20T18:29:56Z" finished-at="2013-06-20T18:29:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="143" started-at="2013-06-20T18:29:58Z" finished-at="2013-06-20T18:29:58Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsNoEmail()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsNoEmail" duration-ms="177" started-at="2013-06-20T18:29:58Z" finished-at="2013-06-20T18:29:58Z">
+        </test-method> <!-- userJoinsNoEmail -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="5" started-at="2013-06-20T18:29:58Z" finished-at="2013-06-20T18:29:58Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="1814" started-at="2013-06-20T18:29:58Z" finished-at="2013-06-20T18:30:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="155" started-at="2013-06-20T18:30:00Z" finished-at="2013-06-20T18:30:00Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsNoFirstName()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsNoFirstName" duration-ms="171" started-at="2013-06-20T18:30:00Z" finished-at="2013-06-20T18:30:00Z">
+        </test-method> <!-- userJoinsNoFirstName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="6" started-at="2013-06-20T18:30:00Z" finished-at="2013-06-20T18:30:00Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="1555" started-at="2013-06-20T18:30:00Z" finished-at="2013-06-20T18:30:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="216" started-at="2013-06-20T18:30:02Z" finished-at="2013-06-20T18:30:02Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsNoLastName()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsNoLastName" duration-ms="176" started-at="2013-06-20T18:30:02Z" finished-at="2013-06-20T18:30:02Z">
+        </test-method> <!-- userJoinsNoLastName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="5" started-at="2013-06-20T18:30:02Z" finished-at="2013-06-20T18:30:02Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="1505" started-at="2013-06-20T18:30:02Z" finished-at="2013-06-20T18:30:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="143" started-at="2013-06-20T18:30:04Z" finished-at="2013-06-20T18:30:04Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsNoPassword()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsNoPassword" duration-ms="171" started-at="2013-06-20T18:30:04Z" finished-at="2013-06-20T18:30:04Z">
+        </test-method> <!-- userJoinsNoPassword -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T18:30:04Z" finished-at="2013-06-20T18:30:04Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="gotoJoinPage(java.lang.String)[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="gotoJoinPage" is-config="true" duration-ms="2019" started-at="2013-06-20T18:30:04Z" finished-at="2013-06-20T18:30:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- gotoJoinPage -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="findElements" is-config="true" duration-ms="139" started-at="2013-06-20T18:30:06Z" finished-at="2013-06-20T18:30:06Z">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="userJoinsPasswordsDoNotMatch()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="userJoinsPasswordsDoNotMatch" duration-ms="196" started-at="2013-06-20T18:30:06Z" finished-at="2013-06-20T18:30:07Z">
+        </test-method> <!-- userJoinsPasswordsDoNotMatch -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.selenium.scripts.browser.join.JoinAsUser@1232784a]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2013-06-20T18:30:07Z" finished-at="2013-06-20T18:30:07Z">
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.selenium.scripts.browser.join.JoinAsUser -->
+    </test> <!-- firefox -->
+  </suite> <!-- regression -->
 </testng-results>

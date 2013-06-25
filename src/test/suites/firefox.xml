@@ -2,10 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="regression" verbose="1">
+	<parameter name="browser"  value="firefox"/>
 	<test name="firefox">
 		<packages>
-			<package name="test.selenium.scripts.firefox" />
-			<package name="test.unit.dbmanager" />
+			<package name="test.selenium.scripts.browser.login" />
+			<package name="test.selenium.scripts.browser.join" />
 		</packages>
 	</test>
 </suite>

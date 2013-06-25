@@ -2,7 +2,9 @@ package test.selenium.scripts.browser.parents;
 
 import java.util.ArrayList;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeMethod;
 
 
 public class Join extends SubNatBrowserTest
@@ -24,4 +26,15 @@ public class Join extends SubNatBrowserTest
 	protected WebElement confirm;
 	protected WebElement error;
 	protected ArrayList<WebElement> errors;
+	
+	@BeforeMethod
+	public void findElements()
+	{
+		browser.findElement(By.id("signup_link")).click();
+		firstname = browser.findElement(By.id(firstname_id));
+		lastname = browser.findElement(By.id(lastname_id));
+		email = browser.findElement(By.id(email_id));
+		password = browser.findElement(By.id(password_id));
+		confirm = browser.findElement(By.id(confirm_id));
+	}
 }

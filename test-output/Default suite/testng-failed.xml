@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="test.selenium.scripts.browser.login.LoginAsUser">
+      <class name="test.selenium.scripts.browser.join.JoinAsUser">
         <methods>
-          <include name="validLogin"/>
+          <include name="goToJoinPage"/>
           <include name="closeBrowser"/>
+          <include name="userJoinsPasswordsDoNotMatch"/>
+          <include name="gotoJoinPage"/>
+          <include name="userJoinsMissingFields"/>
         </methods>
-      </class> <!-- test.selenium.scripts.browser.login.LoginAsUser -->
+      </class> <!-- test.selenium.scripts.browser.join.JoinAsUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
