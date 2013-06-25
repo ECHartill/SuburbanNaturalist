@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [all_tests]">
+  <test name="unit(failed)" preserve-order="true">
+    <classes>
+      <class name="test.unit.dbmanager.DatabaseManagerUnit">
+        <methods>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- test.unit.dbmanager.DatabaseManagerUnit -->
+      <class name="test.selenium.scripts.htmlunit.join.JoinAsUser">
+        <methods>
+          <include name="gotoJoinPage"/>
+        </methods>
+      </class> <!-- test.selenium.scripts.htmlunit.join.JoinAsUser -->
+    </classes>
+  </test> <!-- unit(failed) -->
+</suite> <!-- Failed suite [all_tests] -->

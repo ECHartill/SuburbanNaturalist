@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="all_tests" verbose="1">
+	<parameter name="browser"  value="htmlunit"/>
+	<test name="unit">
+		<packages>
+			<package name="test.unit.modeltests.user" />
+			<package name="test.unit.dbmanager" />
+		</packages>
+	</test>
+	<test name="selenium">
+		<packages>
+			<package name="test.selenium.scripts.browser.login" />
+			<package name="test.selenium.scripts.browser.join" />
+		</packages>
+	</test>
+</suite>
