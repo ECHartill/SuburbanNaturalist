@@ -36,7 +36,7 @@ public class Image
 	{
 		this.imagePath = imagePath;
 	}
-	public String getfileName()
+	public String getFileName()
 	{
 		return fileName;
 	}
